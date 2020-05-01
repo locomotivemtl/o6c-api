@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="PSR-12">
+    <description>PSR-12 Coding Standard</description>
+
+    <arg name="encoding" value="utf-8" />
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <config name="show_progress" value="1" />
+    <config name="ignore_warnings_on_exit" value="1" />
+
+    <file>./src</file>
+
+    <rule ref="PSR12" />
+
+</ruleset>

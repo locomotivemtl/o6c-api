@@ -1,0 +1,6 @@
+.idea
+composer.lock
+config/config.php
+config/jwt.key
+config/jwt.key.pub
+vendor
