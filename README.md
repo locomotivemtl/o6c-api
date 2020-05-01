@@ -41,7 +41,7 @@ composer create-project locomotivemtl/o6c-api
     
 # Adding new users
 
-> Work in prgress.
+> Work in progress.
 
 Add them manually in the `users` table. The password format is
 

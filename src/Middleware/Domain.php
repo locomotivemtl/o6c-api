@@ -47,9 +47,9 @@ class Domain implements Middleware
     {
         $uri = $request->getUri();
         $domain = $uri->getHost();
-        if ($uri->getPort() != 443 && $uri->getPort() != 80) {
-            $domain .= ':' . $uri->getPort();
+        if (!$uri->getPort() || $uri->getPort() == 443 || $uri->getPort() == 80) {
+            return $domain;
         }
-        return $domain;
+        return $domain . ':' . $uri->getPort();
     }
 }

@@ -35,7 +35,7 @@ class HitRepository
         );
         $statement->bindParam(':code', $code, PDO::PARAM_STR);
         $statement->bindParam(':domain', $domain, PDO::PARAM_STR);
-        $statement->bindParam(':ip', $ip, PDO::PARAM_INT);
+        $statement->bindParam(':ip', $ip, PDO::PARAM_STR);
         $statement->execute();
     }
 }
